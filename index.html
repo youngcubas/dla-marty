@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Niespodzianka</title>
+
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #d980fa;
+      }
+      #app {
+        display: grid;
+        place-items: center;
+        height: 100%;
+      }
+      #app > div {
+        display: grid;
+        place-items: center;
+      }
+      h1,
+      h3 {
+        text-align: center;
+        font-family: "Kalam", cursive;
+      }
+      #fire {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <div>
+          <h1>
+            Moja droga Marto... uwu
+          </h1>
+        </div>
+        <input type="date" name="" id="data" />
+        <button onclick="check()">Dalej</button>
+        <img
+          src="https://hermanssupply.ca/wp-content/uploads/2020/09/looped-fire.gif"
+          alt=""
+          id="fire"
+        />
+      </div>
+    </div>
+    <script defer>
+      var data = document.getElementById("data");
+      function check() {
+        if (data.value == "2021-07-17") {
+          window.location.href = "strona.html";
+        } else {
+          window.alert("Popraw sie");
+        }
+      }
+    </script>
+  </body>
+</html>
